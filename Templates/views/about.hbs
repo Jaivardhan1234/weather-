@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>About</title>
+  <link rel="icon" href="/img/weather.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <div class="main-content">
+    {{>header}}
+    <p class="content-2">
+      <b>Overview</b> <br>
+      The National Weather Service (NWS) API allows developers access to critical forecasts, alerts, and observations,
+      along with other weather data. The API was designed with a cache-friendly approach that expires content based upon
+      the information life cycle. The API is based upon of JSON-LD to promote machine data discovery. <br>
+
+      The API is located at: https://api.weather.gov <br>
+
+      Operational issues should be reported to nco.ops@noaa.gov.<br>
+
+      General use questions can be asked on the API github site.<br>
+
+      <b>Pricing</b> <br>
+      All of the information presented via the API is intended to be open data, free to use for any purpose. As a public
+      service of the United States Government, we do not charge any fees for the usage of this service, although there
+      are reasonable rate limits in place to prevent abuse and help ensure that everyone has access. The rate limit is
+      not public information, but allows a generous amount for typical use. If the rate limit is execeed a request will
+      return with an error, and may be retried after the limit clears (typically within 5 seconds). Proxies are more
+      likely to reach the limit, whereas requests directly from clients are not likely. <br>
+
+      <b>Content Negotiation</b> <br>
+      The new API will use headers to modify the version and format of the response. Every request, either by browser or
+      application, sends header information every time you visit any website. For example, a commonly used header called
+      "UserAgent" tells a website what type of device you are using so it can tailor the best experience for you. No
+      private information is shared in a header, and this is a standard practice for all government and private sites.
+      Developers can override these headers for specific purposes (see the "API Specifications" tab for more
+      information). You can get full details by visiting the header field definitions page at the World Wide Web
+      Consortium site. <br>
+    </p>
+
+  </div>
+
+  {{>footer}}
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Help</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p class="content-2">
+            <b>Best way to start and continue calling OpenWeather APIs</b> <br>
+            OpenWeather platform is a set of elegant and widely recognisable APIs. Powered by convolutional machine
+            learning solutions, it is capable of delivering all the weather information necessary for decision-making
+            for any location on the globe. <br>
+            Why our Free Weather API is so good yet free. <br>
+            <b>API care recommendations</b> API care recommendations
+            Like any other things you are using, the API requires some attention. To let it serve you properly, we
+            suggest that you carefully read these instructions and care recommendations. <br>
+
+            <b>First</b>, we recommend making API calls no more than once in 10 minutes for each location, whether you
+            call it by city name, geographical coordinates or by zip code. The update frequency of the OpenWeather model
+            is not higher than once in 10 minutes.<br>
+
+            <b>Second</b>, the only endpoint for making free API calls is api.openweathermap.org. Please, don’t use the
+            server’s IP address. The endpoint for paid subscription plans is different and it can be found in the
+            confirmation email we send you once your subscription is activatedAPI care recommendations<br>
+
+            <b>Third</b>, to get a precise geocoding searching result would rather call API by geographical coordinates.
+            You can always call the OpenWeather APIs using the city name or zip/post code. In case you need to get
+            geographical coordinates by name of your location please use our Geocoding API.<br>
+
+            <b>Finally</b>, please mind that all our tariff plans have caps on the quantity of calls made to API and it
+            varies depending on the subscription type. In case you don’t obtain an API response due to hitting the limit
+            of calls, we would ask you to repeat your request in 10 minutes. On this occasion, we also recommend to keep
+            the API request unamended, since it would help our internal caching service to process your request
+            timely.<br>
+
+        </p>
+    </div>
+    {{>footer}}
+    &nbsp; &nbsp; {{localtime}}
+</body>
+
+</html>
