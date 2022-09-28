@@ -87,7 +87,7 @@ app.get('/weather', (req, res) => {
 
 app.get('*', (req, res) => {
     res.render('404', {
-        title: 404,
+        title: '404',
         name: 'Jaivardhan Singh Sikarwar',
         errorMessage: 'Page not found'
     })
